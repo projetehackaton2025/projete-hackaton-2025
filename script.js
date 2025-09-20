@@ -254,3 +254,22 @@ newsletterForm.addEventListener("submit", function(e) {
   newsletterForm.reset();
 });
 
+/********** MENU OVERLAY **********/
+const hamburger = document.getElementById("hamburger");
+const overlay = document.getElementById("nav-overlay");
+const closeBtn = document.getElementById("close-btn");
+
+hamburger.addEventListener("click", () => {
+  overlay.classList.add("show");
+});
+
+closeBtn.addEventListener("click", () => {
+  overlay.classList.remove("show");
+});
+
+// Fechar ao clicar em algum link
+document.querySelectorAll("#nav-overlay a").forEach(link => {
+  link.addEventListener("click", () => {
+    overlay.classList.remove("show");
+  });
+});
