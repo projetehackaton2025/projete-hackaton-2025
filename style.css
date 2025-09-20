@@ -1,0 +1,244 @@
+/* Reset simples */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fbfd;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(135deg, #639df3, #4087da, #010102);
+  color: #fff;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  flex: 1; /* ocupa o espaço do meio */
+  text-align: center;
+}
+
+.logo {
+  max-width: 60px;
+  height: auto;
+}
+
+header h1 {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  font-size: 2rem;
+  flex: 1;
+  text-align: center;
+  font-weight: 700; /* negrito para destaque */
+}
+
+
+/* Botões globais */
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #4a90e2;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+  margin: 5px;
+}
+
+button:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 12px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffeaa7;
+}
+
+/* Seções */
+main {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section {
+  background: white;
+  margin-bottom: 40px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+section.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  color: #4a90e2;
+  margin-bottom: 15px;
+}
+
+/* Cards gerais */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fdfefe;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #f1faff;
+}
+
+.card i {
+  font-size: 2.2rem;
+  color: #00b894;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #4a90e2;
+}
+
+/* Quiz */
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Newsletter */
+#newsletter {
+  margin-top: 15px;
+}
+
+#newsletter input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+#newsletter button {
+  padding: 8px 15px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#newsletter button:hover {
+  background: #357abd;
+}
+
+#newsletter-msg {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: green;
+}
+
+/* Botão Voltar ao Topo */
+#btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+#btn-top:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Logo */
+.logo {
+  max-width: 60px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}

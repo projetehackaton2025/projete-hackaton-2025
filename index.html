@@ -1,0 +1,146 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEVANTA E ANDA</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/logo.png">
+
+<header>
+  <img src="assets/logo.png" alt="Logo Levanta e Anda" class="logo">
+  <h1>LEVANTA E ANDA!</h1>
+  
+</header>
+
+  <main>
+    <!-- Nossa Ideia -->
+    <section id="ideia" class="fade-in">
+      <h2>🌍 Seja Bem-vindo! </h2>
+      <p>Queremos transformar a realidade de jovens de baixa renda por meio de um site leve e acessível, que ofereça caminhos práticos e personalizados para a construção de carreiras com autonomia e propósito.</p>
+      <p>Sabemos, pelas entrevistas, que muitos desses jovens enfrentam dificuldades financeiras, precisam trabalhar de forma informal, têm pouco acesso a informação e acabam desistindo dos estudos ou dos seus sonhos.</p>
+      <p>Nosso objetivo é criar um espaço que una informação, apoio e oportunidade, despertando confiança no próprio potencial e mostrando que é possível conquistar um futuro melhor.</p>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz-section" class="fade-in">
+      <div class="quiz-container">
+        <h2>Quem Sou Eu?</h2>
+        <div id="quiz"></div>
+        <div id="result"></div>
+      </div>
+    </section>
+
+    <!-- Etapas Interativas -->
+    <section id="etapas-interativas" class="fade-in">
+      <div class="interactive">
+        <h2>O Que Ninguém Me Contou</h2>
+        <p>Selecione o tipo de conteúdo que deseja explorar:</p>
+        <div class="buttons">
+          <button onclick="showContent('mercado')">📈 Mercado de trabalho</button>
+          <button onclick="showContent('saude')">🧠 Saúde mental</button>
+          <button onclick="showContent('competencias')">💡 Competências</button>
+        </div>
+        <div id="content-4" class="content-box"></div>
+      </div>
+
+      <div class="interactive">
+        <h2>Minha Vez</h2>
+        <p>Escolha uma oficina para aprender na prática:</p>
+        <div class="buttons">
+          <button onclick="showWorkshop('curriculo')">📝 Como montar um currículo</button>
+          <button onclick="showWorkshop('entrevista')">🎤 Dicas para entrevistas</button>
+        </div>
+        <div id="content-5" class="content-box"></div>
+      </div>
+
+      <div class="interactive">
+        <h2>Educadin</h2>
+        <p>Assista às mini-aulas e aprenda a lidar melhor com seu dinheiro:</p>
+        <div class="buttons">
+          <button onclick="showFinance('basico')">💰 Conceitos básicos</button>
+          <button onclick="showFinance('planejamento')">📊 Planejamento financeiro</button>
+          <button onclick="showFinance('investimentos')">📈 Primeiros investimentos</button>
+        </div>
+        <div id="content-6" class="content-box"></div>
+      </div>
+    </section>
+
+    <!-- Histórias Inspiradoras -->
+    <section id="historias" class="fade-in">
+      <h2>💬 Entrevistas</h2>
+      <div class="cards">
+        <div class="card"><h3>Renick da Silva dos Santos</h3><p>“Atualmente na minha vida financeira o que eu considero mas difícil é a questão de eu receber a metade de um salário mínimo porque eu trabalho no programa jovem aprendiz então acabo recebendo muito pouco esse valor não dar para quase nada atualmente é só isso que eu considero mas difícil na minha vida financeira.</p></div>
+        <div class="card"><h3>Mauro da Silva</h3><p>“O choque de realidade ao se deparar com pessoas que viveram uma realidade completamente diferente da sua e agora estão no mesmo ambiente que você, e consequentemente se sentir atrasado em relação a eles por falta de recursos.”</p></div>
+      </div>
+    </section>
+
+    <!-- Objetivo -->
+    <section id="objetivo" class="fade-in">
+      <h2>🎯 Objetivo do Projeto</h2>
+      <p>Nosso projeto tem como objetivo principal desenvolver um aplicativo de educação financeira que seja ao mesmo tempo acessível e prático, especialmente para jovens que enfrentam dificuldades para gerenciar suas finanças.</p>
+      <p>O foco da plataforma é triplo: primeiro, organizar as finanças pessoais de forma intuitiva, ajudando os usuários a entenderem para onde seu dinheiro está indo. Em segundo lugar, aprender sobre finanças de uma maneira simples e direta, por meio de conteúdos interativos e personalizados. Por fim, conquistar objetivos financeiros, transformando sonhos em metas alcançáveis através de um acompanhamento visual e motivador.</p>
+    </section>
+
+    <!-- Funcionalidades -->
+    <section id="funcionalidades" class="fade-in">
+      <h2>📱 O que o App faz?</h2>
+      <div class="cards">
+        <div class="card"><i class="fa-solid fa-wallet"></i><h3>Controle de Gastos</h3><p>Registre seus gastos em segundos.</p></div>
+        <div class="card"><i class="fa-solid fa-table"></i><h3>Planilhas Automáticas</h3><p>Organização automática sem complicação.</p></div>
+        <div class="card"><i class="fa-solid fa-chalkboard-user"></i><h3>Cursos Rápidos</h3><p>Aulas curtas e práticas sobre dinheiro no dia a dia.</p></div>
+        <div class="card"><i class="fa-solid fa-star"></i><h3>Metas e Sonhos</h3><p>Defina objetivos e acompanhe seu progresso.</p></div>
+      </div>
+    </section>
+
+    <!-- Experiência -->
+    <section id="experiencia" class="fade-in">
+      <h2>🚀 Experiência Inicial</h2>
+      <p>Ao abrir o app pela primeira vez, o jovem encontra:</p>
+      <ol>
+        <li>Ícones grandes e linguagem simples.</li>
+        <li>Passo a passo rápido: anotar, organizar, aprender, conquistar.</li>
+        <li>Ilustrações coloridas e práticas.</li>
+      </ol>
+    </section>
+
+    <!-- Resumo -->
+    <section id="resumo" class="fade-in">
+      <h2>🌟 Resumo Final</h2>
+      <p><strong>Desafio:</strong> 
+      <p>A educação financeira muitas vezes é vista como um assunto complexo, cheio de termos técnicos e cálculos difíceis. Isso afasta principalmente os jovens, que acabam se sentindo sobrecarregados e sem o conhecimento necessário para gerenciar suas vidas financeiras de forma eficaz.</p>
+
+      <p><strong>Nossa Solução:</strong></p>
+
+      É aqui que o nosso aplicativo entra. Ele é a resposta para a necessidade de uma solução que seja rápida, acessível e, acima de tudo, humana. Em vez de complicar, simplificamos.
+
+      <p>O Resumo Final do nosso projeto é que ele prova que cuidar do dinheiro não precisa ser complicado. Nosso aplicativo é uma plataforma que capacita os usuários, mostrando que é possível:
+      <p>• Aprender de forma intuitiva, com conteúdos interativos e linguagem simples, sem o jargão financeiro.</p>
+      <p>• Se organizar sem dor de cabeça, com ferramentas que facilitam o registro de gastos e a criação de orçamentos.</p>
+      <p>• Transformar o futuro, convertendo sonhos em metas financeiras alcançáveis, com uma jornada guiada e motivadora.</p></p>
+
+      <p>Nosso objetivo é desmistificar as finanças, provando que é possível ter um futuro financeiro sólido com leveza e praticidade.</p>
+      <p>O app é mais que uma ferramenta; é um aliado na jornada por uma vida financeira mais tranquila e segura.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Piloto App de Educação Financeira</p>
+    <form id="newsletter">
+      <label for="email">✉️ Receba dicas semanais:</label>
+      <input type="email" id="email" placeholder="Digite seu e-mail" required>
+      <button type="submit">Cadastrar</button>
+      <p id="newsletter-msg"></p>
+    </form>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="btn-top" onclick="scrollToTop()">⬆</button>
+
+</body>
+</html>
